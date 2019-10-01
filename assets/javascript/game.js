@@ -30,10 +30,17 @@ function randValues(){
 $("#Tealgem").on("click", function(){
     valGem01 = Math.floor(Math.random() * 150);
     totVal = totVal + valGem01;
+    $("#yourScore").html("<h2> Your score is: " + totVal + "</h2>")
     if(totVal > ScoreIn){
+        contLos++;
         alert("You loose!");
+        $("#looser").html("<h2> Defeats: " + contLos + "</h2>");
     }
-    alert("Se gano: " + valGem01 + " y llevas " + totVal + " de un máximo de " + ScoreIn);
+    if(totVal === ScoreIn){
+        contWin++;
+        alert("You won!");
+        $("#winner").html("<h2> Victories: " + contWin + "</h2>");
+    }
 });
 
 randValues();
