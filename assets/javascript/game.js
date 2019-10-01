@@ -17,7 +17,7 @@ function topLimit(){
 function randValues(){
     ScoreIn = Math.floor(Math.random() * 500);
     $("#topScore").html("<h2> Top Score is: " + ScoreIn + "</h2>");
-    // console.log("El tope inicial fue: " + ScoreIn);
+     console.log("El tope inicial fue: " + ScoreIn);
 }
 
 // function randValue01(){ 
@@ -30,6 +30,9 @@ function randValues(){
 $("#Tealgem").on("click", function(){
     valGem01 = Math.floor(Math.random() * 150);
     totVal = totVal + valGem01;
+    if(totVal > ScoreIn){
+        alert("You loose!");
+    }
     alert("Se gano: " + valGem01 + " y llevas " + totVal + " de un máximo de " + ScoreIn);
 });
 

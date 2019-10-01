@@ -13,23 +13,38 @@
 <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- Include my own script file  -->
-    <script src="assets/javascript/game.js"></script>
-
 <!-- Added a link to Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 </head>
 <body class="container">
 
-    <div class="row">Primer contenedor</div>
+    <div class="row">Primer contenedor
         <div class="column"></div>
-    <div class="row">Gems</div>
         <div class="topScore"></div>
-        <button id="Tealgem" style='width: 176px; height: 141px; background:url("assets/images/tealDiamond.png")' ></button>
-        <button id="Yellgem" style='width: 176px; height: 141px; background:url("assets/images/yellowDiamond.png")' ></button>
-        <button id="Bluegem" style='width: 176px; height: 141px; background:url("assets/images/blueDiamond.png")' ></button>
-        <button id="Pinkgem" style='width: 176px; height: 141px; background:url("assets/images/pinkDiamond.png")' ></button>
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-dark" id="Tealgem" style='width: 176px; height: 141px; background:url("assets/images/tealDiamond.png")' ></button>
+        </div>
+        <div class="col">
+            <button id="Yellgem" style='width: 176px; height: 141px; background:url("assets/images/yellowDiamond.png")' ></button>
+        </div>
+        <div class="col">
+            <button id="Bluegem" style='width: 176px; height: 141px; background:url("assets/images/blueDiamond.png")' ></button>
+        </div>
+        <div class="col">
+            <button id="Pinkgem" style='width: 176px; height: 141px; background:url("assets/images/pinkDiamond.png")' ></button>
+        </div>
+    </div><hr>
+    
+    <div class="row">
+        <div class="mid-col6">Wins!</div>
+        <div class="mid-col6">Lost!</div>
+    </div>
+
+<!-- Include my own script file  -->
+    <script src="assets/javascript/game.js"></script>
+
 </body>
 </html>
