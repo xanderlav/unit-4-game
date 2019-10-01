@@ -1,7 +1,9 @@
 .container {
-    background-color: #776600;
+    background-color: beige;
+    width: 300px;
+    height: 600px;
     size: 500px;
-    border: #999999;
+    border: blue;
 }
 
 .row {
