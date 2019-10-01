@@ -16,7 +16,7 @@ function topLimit(){
 
 function randValues(){
     ScoreIn = Math.floor(Math.random() * 500);
-    $("#topScore").html("<h2>" + ScoreIn + "</h2>");
+    $("#topScore").html("<h2> Top Score is: " + ScoreIn + "</h2>");
     // console.log("El tope inicial fue: " + ScoreIn);
 }
 
