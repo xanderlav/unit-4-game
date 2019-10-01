@@ -34,19 +34,13 @@ function verify() {
         $("#yourScore").html("<h2> Your score is: " + totVal + "</h2>");
     }
 }
-// function randValue01(){ 
-    // valGem02 = Math.floor(Math.random() * 50);
-    // valGem03 = Math.floor(Math.random() * 25);
-    // valGem04 = Math.floor(Math.random() * 5);
 
-// }
 
 // Determine random value for teal gem
 $("#Tealgem").on("click", function(){
     valGem01 = Math.floor(Math.random() * 100);
     totVal = totVal + valGem01;
     $("#yourScore").html("<h2> Your score is: " + totVal + "</h2>");
-
 
     if (totVal > ScoreIn) {
         contLos++;
@@ -130,4 +124,3 @@ $("#Pinkgem").on("click", function(){
 });
 
 randValues();
-
