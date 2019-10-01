@@ -19,28 +19,36 @@
 </head>
 <body class="container">
 
-    <div class="row">Primer contenedor
-        <div class="column"></div>
-        <div class="topScore"></div>
+    <div class="jumbotron">
+        <h1 class="display-4">Crystal Collector Game</h1>
+        <p class="lead">This is a simple game chosing a gem, try to beat top Score </p>
+        <hr class="my-4">
+        <div>
+            <span id="topScore"></span>
+        </div>
     </div>
+
+        <hr class="my-4">
+
     <div class="row">
         <div class="col">
             <button class="btn btn-dark" id="Tealgem" style='width: 176px; height: 141px; background:url("assets/images/tealDiamond.png")' ></button>
         </div>
         <div class="col">
-            <button id="Yellgem" style='width: 176px; height: 141px; background:url("assets/images/yellowDiamond.png")' ></button>
+            <button class="btn btn-dark" id="Yellgem" style='width: 176px; height: 141px; background:url("assets/images/yellowDiamond.png")' ></button>
         </div>
         <div class="col">
-            <button id="Bluegem" style='width: 176px; height: 141px; background:url("assets/images/blueDiamond.png")' ></button>
+            <button class="btn btn-dark" id="Bluegem" style='width: 176px; height: 141px; background:url("assets/images/blueDiamond.png")' ></button>
         </div>
         <div class="col">
-            <button id="Pinkgem" style='width: 176px; height: 141px; background:url("assets/images/pinkDiamond.png")' ></button>
+            <button class="btn btn-dark" id="Pinkgem" style='width: 176px; height: 141px; background:url("assets/images/pinkDiamond.png")' ></button>
         </div>
-    </div><hr>
+    </div>
+    <hr class="my-4">
     
     <div class="row">
-        <div class="mid-col6">Wins!</div>
-        <div class="mid-col6">Lost!</div>
+        <div class="col">Wins!</div>
+        <div class="col">Losses!</div>
     </div>
 
 <!-- Include my own script file  -->
